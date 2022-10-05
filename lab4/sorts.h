@@ -1,0 +1,10 @@
+void swap(part *one, part *two);
+void quick_sort(void *base, size_t n, int (*compare) (const void *, const void *));
+void pair_sort(void *base, size_t n, int (*compare) (const void *, const void *));
+void radix_sort(void *base, size_t n, size_t size, char *(*field) (void *));
+size_t bin_search(part element, part *base, size_t n, int (*compare) (const void *, const void *));
+part *index_insert(size_t index, part *element, part *mas, size_t *n);
+part *index_delete(size_t index, size_t amount, part *mas, size_t *n);
+int compare_id(const void *a, const void *b);
+int compare_name(const void *a, const void *b);
+int compare_amount(const void *a, const void *b);
